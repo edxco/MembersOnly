@@ -1,6 +1,14 @@
+![GitHub followers](https://img.shields.io/github/followers/edxco?label=Follow%20edxco&style=social)
+
+![Ruby Version](https://img.shields.io/badge/Ruby-2.7.2-green)
+![Ruby on Rails Version](https://img.shields.io/badge/Ruby%20On%20Rails-6.0.3.4-orange)
+![Tailwindcss](https://img.shields.io/badge/TailWindCss-1.9.6-blue)
+![Devise](https://img.shields.io/badge/Devise-4.7-blue)
+
 ## Members only (Authentication)
 
-Project based on authenticating users on a given web page.
+Project based on authenticating users on a given web page; in this project we setup a simple blog to post secrets, if you are not signed in you can see the post but not the author.
+We used devise for user authentication functionalities, and TailWindCss for UI.
 
 ## Built with
 
@@ -11,8 +19,13 @@ Project based on authenticating users on a given web page.
 
 ## Gems used
 
-- Devise
-- Tailwindcss
+- Devise [See specs](https://github.com/heartcombo/devise)
+- Tailwindcss [See specs](https://tailwindcss.com/)
+
+## Linters used
+
+- Rubocop
+- Stylelint
 
 ## What it does?
 
@@ -37,9 +50,9 @@ You can log in, either with user name or email and password.
 ## Author1
 👤 **Eduardo Baeza**
 
-- GitHub: [@githubhandle](https://github.com/edxco/)
-- Twitter: [@twitterhandle](https://twitter.com/lalo_nbc/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/eduardo-n-baeza/)
+- GitHub: [@edxco](https://github.com/edxco/)
+- Twitter: [@lalo_nbc](https://twitter.com/lalo_nbc/)
+- LinkedIn: [eduardo-n-baeza](https://www.linkedin.com/in/eduardo-n-baeza/)
 
 
 ## Author2
@@ -48,6 +61,12 @@ You can log in, either with user name or email and password.
 - GitHub: [@mke2111](https://github.com/mke2111)
 - Twitter: [@Roymkenya](https://twitter.com/Roymkenya)
 - LinkedIn: [Roy Mukuye](https://www.linkedin.com/in/roy-mukuye-42b07b1b4)
+
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/).
+- [The Odin Project](https://www.theodinproject.com/).
+- [Web-Crunch](https://www.youtube.com/c/Webcrunch/playlists)
 
 
 ## 🤝 Contributing
