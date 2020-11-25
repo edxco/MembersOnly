@@ -7,6 +7,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :posts
+  validates :username, uniqueness: true
+  validates :email, uniqueness: true
+
   def self.find_for_database_authentication warden_condition
     conditions = warden_condition.dup
     login = conditions.delete(:login)
@@ -14,4 +18,6 @@ class User < ApplicationRecord
       ["lower(username) = :value OR lower(email) = :value",
       { value: login.strip.downcase}]).first
   end
+
+
 end
