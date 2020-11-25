@@ -32,9 +32,9 @@ You can log in, either with user name or email and password.
 - In your browser address, type the following URL: [localhost:3000](localhost:3000);
 - Enjoy the App and its functionalities!
 
-## Authors
+# Authors
 
-# Author1
+## Author1
 👤 **Eduardo Baeza**
 
 - GitHub: [@githubhandle](https://github.com/edxco/)
@@ -42,7 +42,7 @@ You can log in, either with user name or email and password.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/eduardo-n-baeza/)
 
 
-# Author2
+## Author2
 👤 **Roy Mukuye**
 
 - GitHub: [@mke2111](https://github.com/mke2111)
@@ -52,7 +52,7 @@ You can log in, either with user name or email and password.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! Start by:
+Contributions, [issues](https://github.com/edxco/MembersOnly/issues) and feature requests are welcome! Start by:
 
 Forking the project.
 Cloning the project to your local machine.
