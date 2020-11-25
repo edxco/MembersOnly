@@ -31,7 +31,7 @@
     <header class="mb-4">
       <nav class="flex items-center justify-between flex-wrap bg-gray-100 py-3 lg:px-10 px-3 text-gray-700 border-b border-gray-400">
         <div class="flex items-center flex-no-shrink mr-6">
-          <%= link_to "Kickoff", root_path, class:"link text-xl tracking-tight font-semibold" %>
+          <%= link_to "Members only", root_path, class:"link text-xl tracking-tight font-semibold" %>
         </div>
         <div class="block lg:hidden">
           <button class="flex items-center px-3 py-2 border rounded text-grey border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -44,7 +44,8 @@
           </div>
           <div class="w-full block lg:flex lg:flex-row lg:flex-1 mt-2 lg:mt-0 text-center lg:text-left lg:justify-end items-center">
             <% if user_signed_in? %>
-              <p class="lg:mr-2 px-4">Welcome, <%= current_user.username %></p>
+              <p class="lg:mr-2 px-4">Welcome, <strong><%= current_user.username %></strong></p>
+              <%= link_to 'New Post', new_post_path, class:"btn btn-red focus:ring-4 mb-2 lg:mr-2 lg:mb-0 block" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"btn btn-default mb-2 lg:mr-2 lg:mb-0 block" %>
             <% else %>
               <%= link_to "Login", new_user_session_path, class:"btn btn-default mb-2 lg:mr-2 lg:mb-0 block" %>

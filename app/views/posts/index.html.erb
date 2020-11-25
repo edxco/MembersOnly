@@ -1,0 +1,32 @@
+<div class="w-full max-w-6xl mx-auto my-8">
+  <div class="bg-white border border-gray-300 rounded-lg px-8 pt-6 pb-8">
+<p id="notice"><%= notice %></p>
+
+<h2 class="pt-4 mb-8 text-4xl font-bold heading">Posts</h2>
+
+<div class="grid grid-cols-3 auto-rows-max gap-4">
+  <div class="text-lg font-bold">Title</div>
+  <div class="text-lg font-bold">Secret</div>
+  <div class="text-lg font-bold">Actions</div>
+  <% @posts.each do |post| %>
+  <div class="border-b pt-2">
+  <%= post.title %>
+  </div>
+  <div class="border-b pt-2">
+  <%= post.body %>
+  </div>
+  <div>
+  <%= link_to 'Show', post, class: "btn btn-gray ml-3" %>
+  <%= link_to 'Edit', edit_post_path(post), class: "btn btn-gray ml-3" %>
+  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-gray ml-3" %>
+  </div>
+  <% end %>
+</div>
+
+
+<br>
+
+<%= link_to 'New Post', new_post_path, class: "btn btn-green mr-3 mt-4" %>
+
+</div>
+</div>
