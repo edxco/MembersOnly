@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../app/assets/stylesheets/posts.scss"
+    ],
+    "names": [],
+    "file": "posts.css"
+}
