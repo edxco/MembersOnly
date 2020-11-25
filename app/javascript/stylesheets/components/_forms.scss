@@ -42,26 +42,26 @@
 }
 
 .input-file {
-    height: auto;
-    z-index: 2;
-    cursor: pointer;
+  height: auto;
+  z-index: 2;
+  cursor: pointer;
 
-    @apply inline-block opacity-0 pl-0 pr-0 py-3 px-3 overflow-hidden absolute border-none;
+  @apply inline-block opacity-0 pl-0 pr-0 py-3 px-3 overflow-hidden absolute border-none;
 
-    + label {
-      @extend .btn;
-      @extend .btn-default;
+  +label {
+    @extend .btn;
+    @extend .btn-default;
 
-      @apply cursor-pointer inline-flex items-center justify-start w-auto;
+    @apply cursor-pointer inline-flex items-center justify-start w-auto;
 
-      * {
-        pointer-events: none;
-      }
+    * {
+      pointer-events: none;
+    }
 
-      &:focus {
-        outline: 1px dotted #000;
-        outline: -webkit-focus-ring-color auto 5px;
-      }
+    &:focus {
+      outline: 1px dotted #000;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
   }
 }
 
@@ -71,7 +71,7 @@
   input[type="checkbox"] {
     @apply hidden appearance-none;
 
-    &:checked ~ label:before {
+    &:checked~label:before {
       content: "";
       background-image: url('../images/icons/checkmark.svg');
       background-size: 10px 10px;
@@ -113,12 +113,12 @@
   input[type="radio"] {
     @apply hidden appearance-none;
 
-    &:checked ~ label:before {
+    &:checked~label:before {
       content: "";
       @apply bg-blue-500 border-transparent text-white transition ease-in-out duration-100 shadow-none;
     }
 
-    &:checked ~ label:after {
+    &:checked~label:after {
       @apply bg-white rounded-full;
       content: "";
       width: 6px;
