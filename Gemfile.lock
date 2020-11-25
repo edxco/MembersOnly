@@ -230,6 +230,7 @@ DEPENDENCIES
   listen (~> 3.2)
   name_of_person (~> 1.1, >= 1.1.1)
   puma (~> 4.1)
+  postcss (>=8.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
   selenium-webdriver
